@@ -1,0 +1,70 @@
+.erro h2{
+    text-align:center
+}
+.erro p{
+    text-align:center;
+    padding:0 40px;
+    font-size:14px;
+    line-height:1.5;
+    color:#60646b
+}
+.toolbar-background{
+    color:#FFF;
+    background-color:#F55555
+}
+.toolbar-title{
+    color:#FFF;
+    font-size: 1.4rem;
+    font-weight:300;
+    font-family:'Open Sans';
+    text-transform:uppercase
+}
+.back-button{
+    color:#FFF;
+    .back-button-icon{
+        font-size:20px
+    }
+    .back-button-text{
+        display:none
+    }
+}
+.card {
+    border-radius: 5px;
+    box-shadow:0 0 7px 0px rgba(0,0,0,.1);
+
+    .label {
+		background: url("../assets/imgs/seta.svg") no-repeat right;
+		background-size: 8px;
+    }
+
+    h2.nomeLocal{
+	    color:#F55555;
+	    font-size: 1.4rem;
+	    font-family:'Open Sans';
+	    font-weight: 400;
+	}
+	.descLocal{
+		color: #7E7E7E;
+	    font-weight:300;
+	    font-size: 1.2rem;
+	    font-family:'Open Sans'
+	}
+}
+
+.card-md {
+	margin: 16px;
+	width: calc(100% - 32px);
+}
+
+.card-ios {
+	margin: 18px;
+	width: calc(100% - 36px);
+}
+
+.ion-md-arrow-back::before {
+	content: "\f3cf";
+}
+
+.header-md::after {
+	background: none;
+}

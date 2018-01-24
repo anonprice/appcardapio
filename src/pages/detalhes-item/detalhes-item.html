@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let item of detalhesItem">
+    <ion-item>
+      <h2 class="nomeItemCardapio">{{ item.nome_item }}</h2>
+
+      <p class="valor">{{ item.valor | FormatarReaisPipe}}</p>
+    </ion-item>
+    <ion-card-content>
+      <div [innerHtml]="item.descricao_completa"></div>
+    </ion-card-content>
+    <button ion-button full (click)="ligar(detalhes.telefone)">Ligar agora!</button>
+  </ion-card>
+</ion-content>

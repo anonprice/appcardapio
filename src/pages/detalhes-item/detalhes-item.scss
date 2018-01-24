@@ -1,0 +1,50 @@
+page-detalhes-item {
+	.card .label {
+		background-image: none;
+	}
+
+	.nomeItemCardapio {
+		color: #F55555;
+		font-size: 1.6rem;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.valor {
+		color: #7E7E7E;
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		line-height: 2.2rem;
+	}
+
+	.card-content,
+	.card-content p {
+		color: #7E7E7E;
+		font-size: 1.2rem;
+	}
+
+	.button{
+		text-transform:uppercase;
+		background-color:#37C332;
+		width: 90%;
+		height: 3.8em;
+		margin: 0 auto;
+		border-radius: 5px;
+		font-size: 1.2rem;
+		font-weight: 300;
+		font-family:'Open Sans';
+		box-shadow: none;
+		margin-bottom: 20px;
+	}
+
+	.button:hover:not(.disable-hover),.button.activated{
+		background-color:#37C332;
+	}
+}

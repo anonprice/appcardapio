@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-card *ngFor="let detalhes of detalhesLocal">
+    <ion-item>
+      <h2 class="nomeLocalDetalhe">{{ detalhes.nome }}</h2>
+    </ion-item>
+    <ion-card-content>
+      <p class="txtEndTel">{{ detalhes.telefone}} / {{ detalhes.celular}}</p>
+      <p class="txtEndTel">{{ detalhes.endereco}}</p>
+    </ion-card-content>
+    <button ion-button full (click)="ligar(detalhes.telefone)">Ligar agora!</button>
+    <ion-card *ngFor="let item of cardapio">
+      <ion-item (click)="listarItensCategoria(item.id, item.local)">
+        <h2 class="nomeCategoria">{{ item.descricao }}</h2>
+      </ion-item>
+  </ion-card>
+  <div *ngIf="erro" class="erro" padding>
+  <p>Nenhum item cadastrado para <b>{{ detalhes.nome }}</b>.</p>
+  </div>
+  </ion-card>
+  <div *ngIf="erroLocal" class="erro" padding>
+  <img [src]="'assets/imgs/' + erroLocal">
+  <h2>Desculpe, nenhum local foi encontrado!</h2>
+  <p>Verifique sua conexão com a <b>internet</b> e tente novamente.</p>
+  </div>
+</ion-content>

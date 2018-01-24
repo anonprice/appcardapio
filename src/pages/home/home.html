@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-title>
+    <img src="assets/imgs/logo.svg" alt="" width="100px">
+  </ion-title>
+</ion-header>
+<form (ngSubmit)="pesquisaForm()">
+  <ion-item>
+    <ion-input type="text" placeholder="Pesquisar" [(ngModel)]="form.pesquisar" name="title"></ion-input>
+    <ion-icon name="search" item-right></ion-icon>
+  </ion-item>
+</form>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col (click)="listarItens('pizzaria')">
+        <div class="listaCategoria"><img src="assets/imgs/pizza.png" width="100px"><h1>Pizza</h1></div>
+      </ion-col>
+      <ion-col (click)="listarItens('hamburgeria')">
+        <div class="listaCategoria"><img src="assets/imgs/burger.png" width="100px"><h1>Lanche</h1></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col (click)="listarItens('cervejaria')">
+        <div class="listaCategoria"><img src="assets/imgs/beer.png" width="100px"><h1>Chopp</h1></div>
+      </ion-col>
+      <ion-col (click)="listarItens('acaiteria')">
+        <div class="listaCategoria"><img src="assets/imgs/acai.png" width="100px"><h1>Açaí</h1></div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col (click)="listarItens('sorveteria')">
+        <div class="listaCategoria"><img src="assets/imgs/sorvete.png" width="100px"><h1>Sorvete</h1></div>
+      </ion-col>
+      <ion-col (click)="listarItens('lacarte')">
+        <div class="listaCategoria"><img src="assets/imgs/prato.png" width="100px"><h1>À La Carte</h1></div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+<div class="footer">
+    Cardápio Online 2018
+</div>
+</ion-content>

@@ -1,0 +1,52 @@
+page-detalhes {
+
+	.card .label {
+		background-image: none;
+	}
+	.card .card .label {
+		background: url("../assets/imgs/seta.svg") no-repeat right;
+		background-size: 8px;
+	}
+
+	.nomeLocalDetalhe {
+		color: #F55555;
+		font-size: 1.6rem;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.txtEndTel {
+		color: #7E7E7E;
+		font-size: 1.2rem;
+		font-weight: 300;
+	}
+
+	.button{
+		text-transform:uppercase;
+		background-color:#37C332;
+		width: 90%;
+		height: 3.8em;
+		margin: 0 auto;
+		border-radius: 5px;
+		font-size: 1.2rem;
+		font-weight: 300;
+		font-family:'Open Sans';
+		box-shadow: none;
+	}
+
+	.button:hover:not(.disable-hover),.button.activated{
+		background-color:#37C332;
+	}
+
+	.nomeItemCardapio {
+		color: #F55555;
+		font-size: 1.4rem;
+	}
+
+	.valorItemCardapio {
+		color: #7E7E7E;
+		font-size: 1.2rem;
+		font-weight: 300;
+	}
+
+}

@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Pesquisa</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div *ngIf="pesquisaItem">
+    <ion-card *ngFor="let local of pesquisaItem" (click)="abrirDetalhes(local.id)">
+      <ion-item>
+        <h2 class="nomeLocal">{{local.nome}}</h2>
+        <p class="descLocal">{{local.telefone}} / {{local.celular}}</p>
+      </ion-item>
+    </ion-card>
+  </div>
+  <div *ngIf="erro" class="erro" padding>
+  <img [src]="'assets/imgs/' + erro">
+  <h2>Desculpe, nenhum local foi encontrado!</h2>
+  <p>Verifique sua conexão com a <b>internet</b> e tente novamente.</p>
+  </div>
+</ion-content>

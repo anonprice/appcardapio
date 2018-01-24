@@ -1,0 +1,69 @@
+page-home{
+    ion-header{
+        background-color:#F55555;
+        height:100px;
+        text-align:center;
+        padding:22px
+    }
+    ion-title{
+        color:#FFF
+    }
+    form{
+        z-index:99999999999;
+        position:absolute;
+        top:72px;
+        width:90%;
+        left:5%;
+        .item-ios,.item-md{
+            border-radius:5px;
+            box-shadow:0 0 10px 3px rgba(0,0,0,.06)
+        }
+        .item.item-block .item-inner{
+            border:none
+        }
+        .text-input{
+            font-family:'Open Sans';
+            font-weight:300;
+            font-size:14px;
+            color: #7E7E7E;
+        }
+        .item ion-icon[item-right]{
+            margin-top:6px
+        }
+        .ion-ios-search:before,.ion-md-search::before{
+            color:#F9A9A9;
+            font-size:20px
+        }
+    }
+    .grid{
+        padding-top:40px;
+        .col{
+            padding:12px
+        }
+    }
+    .listaCategoria{
+        width:100%;
+        height:150px;
+        text-align:center;
+        h1{
+            color:#7E7E7E;
+            font-size:14px;
+            font-family:'Open Sans';
+            font-weight:700;
+            letter-spacing: 1px;
+            text-transform:uppercase
+        }
+    }
+    .footer{
+        width:100%;
+        background-color:#F55555;
+        text-align:center;
+        padding:22px;
+        color:#FFF;
+        font-family:'Open Sans';
+        font-weight:300
+    }
+    .pesquisa{
+        background-color:#fff
+    }
+}
